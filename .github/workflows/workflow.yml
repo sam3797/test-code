@@ -32,7 +32,7 @@ jobs:
         run: |
           # Assuming the Deployment Group is already setup
           aws deploy create-deployment \
-            --application-name App-2 \
-            --deployment-group-name deploy-2 \
+            --application-name my-app-2 \
+            --deployment-group-name deploy-3 \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
              --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
